@@ -8,6 +8,8 @@ import (
 	db "github.com/Divyansh12/simplebank/db/sqlc"
 	"github.com/Divyansh12/simplebank/util"
 	_ "github.com/lib/pq"
+
+	_ "github.com/golang/mock/mockgen/model"
 )
 
 func main() {
