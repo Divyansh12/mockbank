@@ -56,7 +56,7 @@ func (server *Server) validAccount(ctx *gin.Context, accountID int64, currency s
 
 	if err != nil {
 		if err == sql.ErrNoRows {
-			ctx.JSON(http.StatusBadRequest, errorResponse(err))
+			ctx.JSON(http.StatusNotFound, errorResponse(err))
 			return false
 		}
 
@@ -79,7 +79,7 @@ func (server *Server) balanceCheck(ctx *gin.Context, accountID int64, currency s
 
 	if err != nil {
 		if err == sql.ErrNoRows {
-			ctx.JSON(http.StatusBadRequest, errorResponse(err))
+			ctx.JSON(http.StatusNotFound, errorResponse(err))
 			return false
 		}
 
