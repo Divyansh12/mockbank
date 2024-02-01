@@ -5,13 +5,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Divyansh12/simplebank/util"
 	"github.com/stretchr/testify/require"
-	"github.com/techschool/simplebank/util"
 )
 
 func createRandomUser(t *testing.T) User {
 
-	hashedPassword, err := util.HashPassword(util.RandomString(6))
+	hashedPassword, err := util.HashedPassword(util.RandomString(6))
 	require.NoError(t, err)
 
 	arg := CreateUserParams{

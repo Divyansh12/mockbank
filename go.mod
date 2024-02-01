@@ -11,7 +11,6 @@ require (
 	github.com/lib/pq v1.10.5
 	github.com/spf13/viper v1.18.2
 	github.com/stretchr/testify v1.8.4
-	github.com/techschool/simplebank v0.0.0-20231029084543-9544012aa580
 	golang.org/x/crypto v0.18.0
 )
 
